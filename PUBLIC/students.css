@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+
+    min-height: 100vh;
+
+    padding: 35px 20px;
+}
+
+
+.dashboard {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+.dashboard-header h1 {
+    font-size: 30px;
+
+    color: #111827;
+
+    margin-bottom: 6px;
+}
+
+
+.dashboard-header p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   ADD BUTTON
+   ========================= */
+
+.add-btn {
+    text-decoration: none;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.add-btn:hover {
+    background: #374151;
+}
+
+
+/* =========================
+   SEARCH
+   ========================= */
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+
+.search-section input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+
+.search-section input:focus {
+    outline: none;
+
+    border-color: #111827;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+.table-container {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+
+thead {
+    background: #111827;
+
+    color: white;
+}
+
+
+th,
+td {
+    padding: 15px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 14px;
+}
+
+
+th {
+    font-weight: 600;
+}
+
+
+td {
+    color: #374151;
+}
+
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+   ========================= */
+
+.action-btn {
+    border: none;
+
+    padding: 7px 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    margin-right: 5px;
+}
+
+
+.view-btn {
+    background: #e5e7eb;
+
+    color: #111827;
+}
+
+
+.edit-btn {
+    background: #dbeafe;
+
+    color: #1d4ed8;
+}
+
+
+.delete-btn {
+    background: #fee2e2;
+
+    color: #b91c1c;
+}
+
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+   ========================= */
+
+.empty-message {
+    display: none;
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+
+    .dashboard-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 25px;
+    }
+
+
+    .add-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
+
+/* =========================
+   HEADER ACTIONS
+   ========================= */
+
+.header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================
+   ABOUT BUTTON
+   ========================= */
+
+.about-btn {
+    display: inline-block;
+
+    padding: 11px 16px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+.about-btn:hover {
+    background: #111827;
+
+    color: #ffffff;
+
+    border-color: #111827;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .header-actions {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .about-btn,
+    .add-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}

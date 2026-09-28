@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+
+    min-height: 100vh;
+
+    padding: 35px 20px;
+
+    color: #111827;
+}
+
+
+.profile-container {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.profile-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+.page-label {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #6b7280;
+
+    margin-bottom: 8px;
+}
+
+
+.profile-header h1 {
+    font-size: 32px;
+
+    margin-bottom: 6px;
+}
+
+
+#studentRegister {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.header-actions {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.back-btn,
+.edit-btn {
+    padding: 11px 16px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+.back-btn {
+    background: white;
+
+    color: #111827;
+
+    border: 1px solid #d1d5db;
+}
+
+
+.back-btn:hover {
+    background: #f9fafb;
+}
+
+
+.edit-btn {
+    border: none;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+.edit-btn:hover {
+    background: #374151;
+}
+
+
+/* =========================
+   PROFILE CONTENT
+   ========================= */
+
+.profile-content {
+    display: none;
+}
+
+
+/* =========================
+   PROFILE SECTION
+   ========================= */
+
+.profile-section {
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.profile-section h2 {
+    font-size: 19px;
+
+    margin-bottom: 22px;
+
+    padding-left: 12px;
+
+    border-left: 4px solid #111827;
+}
+
+
+/* =========================
+   DETAILS GRID
+   ========================= */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px 25px;
+}
+
+
+.detail {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+.detail span {
+    font-size: 12px;
+
+    color: #6b7280;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.detail strong {
+    font-size: 15px;
+
+    color: #111827;
+
+    font-weight: 500;
+
+    word-break: break-word;
+}
+
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   SYSTEM INFORMATION
+   ========================= */
+
+.system-section {
+    background: #f9fafb;
+}
+
+
+.system-section .detail strong {
+    font-family: monospace;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   LOADING
+   ========================= */
+
+.loading {
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    color: #6b7280;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   ERROR
+   ========================= */
+
+.error-message {
+    display: none;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+
+    .profile-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+
+    .header-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .back-btn,
+    .edit-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .profile-header h1 {
+        font-size: 26px;
+    }
+
+
+    .profile-section {
+        padding: 20px;
+    }
+
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .full-width {
+        grid-column: auto;
+    }
+
+}
+
+
+/* =========================
+   ABOUT PROJECT
+   ========================= */
+
+.about-project {
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 25px 0 10px;
+}
+
+
+.about-btn {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: white;
+
+    color: #111827;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+.about-btn:hover {
+    background: #111827;
+
+    color: white;
+
+    border-color: #111827;
+}

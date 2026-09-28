@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header class="form-header">
+
+            <h1>Student Registration</h1>
+
+            <p>
+                Please provide the required information below
+            </p>
+
+        </header>
+
+
+        <form id="studentForm">
+
+
+            <!-- ========================= -->
+            <!-- PERSONAL DETAILS -->
+            <!-- ========================= -->
+
+            <section class="form-section">
+
+                <h2>Personal Details</h2>
+
+                <div class="form-grid">
+
+
+                    <div class="form-group full-width">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="dateOfBirth">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dateOfBirth"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender" required>
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="alternatePhone">
+                            Alternate Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="alternatePhone"
+                            placeholder="Optional"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bloodGroup">
+                            Blood Group
+                        </label>
+
+                        <select id="bloodGroup" required>
+
+                            <option value="">
+                                Select Blood Group
+                            </option>
+
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="aadharNumber">
+                            Aadhaar Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="aadharNumber"
+                            placeholder="Optional"
+                            maxlength="12"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- ACADEMIC DETAILS -->
+            <!-- ========================= -->
+
+            <section class="form-section">
+
+                <h2>Academic Details</h2>
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="registerNumber">
+                            Register Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerNumber"
+                            placeholder="Enter register number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+                        <select id="course" required>
+
+                            <option value="">
+                                Select Course
+                            </option>
+
+                            <option value="B.Tech">
+                                B.Tech
+                            </option>
+
+                            <option value="BCA">
+                                BCA
+                            </option>
+
+                            <option value="B.Sc">
+                                B.Sc
+                            </option>
+
+                            <option value="BBA">
+                                BBA
+                            </option>
+
+                            <option value="MCA">
+                                MCA
+                            </option>
+
+                            <option value="M.Tech">
+                                M.Tech
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select id="department" required>
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option value="Computer Science">
+                                Computer Science
+                            </option>
+
+                            <option value="Information Technology">
+                                Information Technology
+                            </option>
+
+                            <option value="Artificial Intelligence">
+                                Artificial Intelligence
+                            </option>
+
+                            <option value="Electronics">
+                                Electronics
+                            </option>
+
+                            <option value="Mechanical">
+                                Mechanical
+                            </option>
+
+                            <option value="Civil">
+                                Civil
+                            </option>
+
+                            <option value="Commerce">
+                                Commerce
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="year">
+                            Year
+                        </label>
+
+                        <select id="year" required>
+
+                            <option value="">
+                                Select Year
+                            </option>
+
+                            <option value="1st Year">
+                                1st Year
+                            </option>
+
+                            <option value="2nd Year">
+                                2nd Year
+                            </option>
+
+                            <option value="3rd Year">
+                                3rd Year
+                            </option>
+
+                            <option value="4th Year">
+                                4th Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="semester">
+                            Semester
+                        </label>
+
+                        <select id="semester" required>
+
+                            <option value="">
+                                Select Semester
+                            </option>
+
+                            <option value="Semester 1">
+                                Semester 1
+                            </option>
+
+                            <option value="Semester 2">
+                                Semester 2
+                            </option>
+
+                            <option value="Semester 3">
+                                Semester 3
+                            </option>
+
+                            <option value="Semester 4">
+                                Semester 4
+                            </option>
+
+                            <option value="Semester 5">
+                                Semester 5
+                            </option>
+
+                            <option value="Semester 6">
+                                Semester 6
+                            </option>
+
+                            <option value="Semester 7">
+                                Semester 7
+                            </option>
+
+                            <option value="Semester 8">
+                                Semester 8
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="admissionYear">
+                            Admission Year
+                        </label>
+
+                        <input
+                            type="number"
+                            id="admissionYear"
+                            placeholder="e.g. 2026"
+                            min="2000"
+                            max="2100"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- ADDRESS -->
+            <!-- ========================= -->
+
+            <section class="form-section">
+
+                <h2>Address Details</h2>
+
+                <div class="form-grid">
+
+
+                    <div class="form-group full-width">
+
+                        <label for="address">
+                            Full Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            placeholder="Enter your full address"
+                            rows="4"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Enter city"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State
+                        </label>
+
+                        <input
+                            type="text"
+                            id="state"
+                            placeholder="Enter state"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="pincode">
+                            Pincode
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            placeholder="Enter pincode"
+                            maxlength="6"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- PARENT / GUARDIAN -->
+            <!-- ========================= -->
+
+            <section class="form-section">
+
+                <h2>Parent / Guardian Details</h2>
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="fatherName">
+                            Father's Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fatherName"
+                            placeholder="Enter father's name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="motherName">
+                            Mother's Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="motherName"
+                            placeholder="Enter mother's name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="parentPhone">
+                            Parent Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="parentPhone"
+                            placeholder="Enter parent phone"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="parentEmail">
+                            Parent Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="parentEmail"
+                            placeholder="Enter parent email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- ADDITIONAL INFORMATION -->
+            <!-- ========================= -->
+
+            <section class="form-section">
+
+                <h2>Additional Information</h2>
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="nationality">
+                            Nationality
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nationality"
+                            value="Indian"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="religion">
+                            Religion
+                        </label>
+
+                        <input
+                            type="text"
+                            id="religion"
+                            placeholder="Optional"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="General">
+                                General
+                            </option>
+
+                            <option value="OBC">
+                                OBC
+                            </option>
+
+                            <option value="SC">
+                                SC
+                            </option>
+
+                            <option value="ST">
+                                ST
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="emergencyContact">
+                            Emergency Contact
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="emergencyContact"
+                            placeholder="Emergency phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group checkbox-group">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="hostelRequired"
+                            >
+
+                            Hostel Required
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-group checkbox-group">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="transportRequired"
+                            >
+
+                            Transport Required
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- SUBMIT -->
+            <!-- ========================= -->
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                Register Student
+            </button>
+
+
+            <div id="message"></div>
+
+            <!-- ========================= -->
+<!-- GO TO DASHBOARD -->
+<!-- ========================= -->
+
+<div class="dashboard-link-container">
+
+    <p>
+        Already registered?
+    </p>
+
+    <a
+        href="/students.html"
+        class="dashboard-link"
+    >
+        Go to Dashboard →
+    </a>
+
+</div>
+
+
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

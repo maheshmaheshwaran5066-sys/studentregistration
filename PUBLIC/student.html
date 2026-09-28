@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile</title>
+
+    <link rel="stylesheet" href="student.css">
+
+</head>
+
+
+<body>
+
+    <div class="profile-container">
+
+
+        <!-- ========================= -->
+        <!-- HEADER -->
+        <!-- ========================= -->
+
+        <header class="profile-header">
+
+            <div>
+
+                <p class="page-label">
+                    STUDENT PROFILE
+                </p>
+
+                <h1 id="studentName">
+                    Loading...
+                </h1>
+
+                <p id="studentRegister">
+                    Register Number: —
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <a
+                    href="/students.html"
+                    class="back-btn"
+                >
+                    ← Back to Students
+                </a>
+
+                <button
+                    id="editBtn"
+                    class="edit-btn"
+                >
+                    Edit Student
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ========================= -->
+        <!-- LOADING -->
+        <!-- ========================= -->
+
+        <div
+            id="loading"
+            class="loading"
+        >
+            Loading student information...
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- PROFILE CONTENT -->
+        <!-- ========================= -->
+
+        <main
+            id="profileContent"
+            class="profile-content"
+        >
+
+
+            <!-- ========================= -->
+            <!-- PERSONAL DETAILS -->
+            <!-- ========================= -->
+
+            <section class="profile-section">
+
+                <h2>Personal Details</h2>
+
+                <div class="details-grid">
+
+                    <div class="detail">
+
+                        <span>Full Name</span>
+
+                        <strong id="name">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Date of Birth</span>
+
+                        <strong id="dateOfBirth">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Gender</span>
+
+                        <strong id="gender">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Email</span>
+
+                        <strong id="email">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Phone</span>
+
+                        <strong id="phone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Alternate Phone</span>
+
+                        <strong id="alternatePhone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Blood Group</span>
+
+                        <strong id="bloodGroup">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Aadhaar Number</span>
+
+                        <strong id="aadharNumber">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- ACADEMIC DETAILS -->
+            <!-- ========================= -->
+
+            <section class="profile-section">
+
+                <h2>Academic Details</h2>
+
+                <div class="details-grid">
+
+                    <div class="detail">
+
+                        <span>Register Number</span>
+
+                        <strong id="registerNumber">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Course</span>
+
+                        <strong id="course">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Department</span>
+
+                        <strong id="department">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Year</span>
+
+                        <strong id="year">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Semester</span>
+
+                        <strong id="semester">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Admission Year</span>
+
+                        <strong id="admissionYear">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- ADDRESS DETAILS -->
+            <!-- ========================= -->
+
+            <section class="profile-section">
+
+                <h2>Address Details</h2>
+
+                <div class="details-grid">
+
+                    <div class="detail full-width">
+
+                        <span>Full Address</span>
+
+                        <strong id="address">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>City</span>
+
+                        <strong id="city">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>State</span>
+
+                        <strong id="state">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Pincode</span>
+
+                        <strong id="pincode">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- PARENT / GUARDIAN -->
+            <!-- ========================= -->
+
+            <section class="profile-section">
+
+                <h2>Parent / Guardian Details</h2>
+
+                <div class="details-grid">
+
+                    <div class="detail">
+
+                        <span>Father's Name</span>
+
+                        <strong id="fatherName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Mother's Name</span>
+
+                        <strong id="motherName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Parent Phone</span>
+
+                        <strong id="parentPhone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Parent Email</span>
+
+                        <strong id="parentEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- ADDITIONAL INFORMATION -->
+            <!-- ========================= -->
+
+            <section class="profile-section">
+
+                <h2>Additional Information</h2>
+
+                <div class="details-grid">
+
+                    <div class="detail">
+
+                        <span>Nationality</span>
+
+                        <strong id="nationality">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Religion</span>
+
+                        <strong id="religion">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Category</span>
+
+                        <strong id="category">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Emergency Contact</span>
+
+                        <strong id="emergencyContact">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Hostel Required</span>
+
+                        <strong id="hostelRequired">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Transport Required</span>
+
+                        <strong id="transportRequired">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- SYSTEM INFORMATION -->
+            <!-- ========================= -->
+
+            <section class="profile-section system-section">
+
+                <h2>System Information</h2>
+
+                <div class="details-grid">
+
+                    <div class="detail">
+
+                        <span>Student ID</span>
+
+                        <strong id="studentId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Registered On</span>
+
+                        <strong id="createdAt">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span>Last Updated</span>
+
+                        <strong id="updatedAt">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- ========================= -->
+        <!-- ERROR -->
+        <!-- ========================= -->
+
+        <div
+            id="errorMessage"
+            class="error-message"
+        >
+        </div>
+
+        <!-- ========================= -->
+<!-- ABOUT PROJECT -->
+<!-- ========================= -->
+
+<div class="about-project">
+
+    <a
+        href="/about.html"
+        class="about-btn"
+    >
+        About This Project →
+    </a>
+
+</div>
+
+
+    </div>
+
+    
+
+
+    <script src="student.js"></script>
+
+</body>
+
+</html>
